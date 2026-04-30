@@ -1,2 +1,6 @@
 node_modules/
+games/*/node_modules/
+games/*/dist/
 dist/
+.vite/
+games/*/.vite/

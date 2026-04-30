@@ -1,17 +1,13 @@
 {
-  "name": "ninja-plataforma",
-  "version": "0.1.0",
+  "name": "arcade2d",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "games/*"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "phaser": "^3.88.2"
-  },
-  "devDependencies": {
-    "vite": "^6.3.5"
+    "build": "node scripts/build-all.js",
+    "dev:kurokage": "npm run dev -w games/kurokage"
   }
 }
